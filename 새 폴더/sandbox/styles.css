@@ -1,0 +1,202 @@
+h1 {
+  text-decoration: underline;
+}
+
+body {
+  background-size: cover;
+  background-position: center;
+  transition: background-image 0.5s ease;
+}
+
+.worldclock {
+  position: absolute;
+  top: 0;
+  left: 10%;
+  transform: translateX(-50%);
+  font-family: "Your Font", sans-serif; /* 원하는 폰트로 변경 */
+  color: white; /* 흰색으로 변경 */
+}
+.loginForm {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Your Font", sans-serif;
+
+  color: rgba(0, 0, 0, 0.5);
+}
+.loginForm:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+#idInput,
+#pwInput {
+  width: 200px; /* 원하는 너비로 조절 */
+  height: 30px; /* 원하는 높이로 조절 */
+  padding: 5px; /* 내부 여백 설정 */
+  margin-bottom: 10px; /* 입력란 간격 설정 */
+  border: 1px solid #ccc; /* 테두리 스타일 설정 */
+  border-radius: 5px; /* 모서리 둥글게 설정 */
+}
+
+#idInput {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.1
+  ); /* 흰색(255, 255, 255)의 배경에 투명도 0.5 적용 */
+}
+#idInput:hover {
+  background-color: rgba(
+    0,
+    0,
+    0,
+    1
+  ); /* 마우스 호버 시 배경을 완전히 불투명하게 변경 */
+  color: rgba(
+    255,
+    255,
+    255,
+    1
+  ); /* 마우스 호버 시 텍스트 색상을 완전히 불투명하게 변경 */
+}
+
+#pwInput {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.1
+  ); /* 흰색(255, 255, 255)의 배경에 투명도 0.5 적용 */
+}
+#pwInput:hover {
+  background-color: rgba(
+    0,
+    0,
+    0,
+    1
+  ); /* 마우스 호버 시 배경을 완전히 불투명하게 변경 */
+  color: rgba(
+    255,
+    255,
+    255,
+    1
+  ); /* 마우스 호버 시 텍스트 색상을 완전히 불투명하게 변경 */
+}
+
+.clickbutton .b3 {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.5);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease; /* 트랜지션 효과 추가 */
+}
+
+.clickbutton .b3:hover {
+  background-color: rgba(
+    0,
+    0,
+    0,
+    1
+  ); /* 마우스 호버 시 배경을 완전히 불투명하게 변경 */
+  color: rgba(
+    255,
+    255,
+    255,
+    1
+  ); /* 마우스 호버 시 텍스트 색상을 완전히 불투명하게 변경 */
+}
+.makeidpwlink .b1 {
+  position: absolute;
+  top: 70%;
+  left: 80%;
+  width: 200px; /* 원하는 너비로 조절 */
+  height: 200px; /* 원하는 높이로 조절 */
+  font-size: 40px;
+
+  background-color: rgba(0, 0, 0, 0); /* 배경 색상을 반투명하게 설정 */
+  color: rgba(0, 0, 0, 0.5); /* 버튼 텍스트 색상 설정 */
+  border: none; /* 테두리 제거 */
+  padding: 10px 20px; /* 내부 여백 설정 */
+  border-radius: 5px; /* 모서리 둥글게 설정 */
+  cursor: pointer; /* 커서 모양 변경 */
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease; /* 트랜지션 효과 추가 */
+}
+
+.makeidpwlink .b1:hover {
+  background-color: rgba(
+    0,
+    0,
+    0,
+    1
+  ); /* 마우스 호버 시 배경을 완전히 불투명하게 변경 */
+  color: white; /* 마우스 호버 시 텍스트 색상을 유지 */
+}
+/* 환영 메시지 스타일 */
+#welcomeMessage {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5); /* 흰색 배경에 투명도 적용 */
+
+  transition: border-bottom 0.5s ease; /* 트랜지션 효과 추가 */
+  font-size: 30px; /* 폰트 사이즈를 18px로 설정 */
+}
+
+#welcomeMessage:hover {
+  border-bottom: 2px solid rgba(255, 255, 255, 1); /* 마우스 호버 시 테두리를 완전히 불투명하게 변경 */
+}
+
+/* ID 값 스타일 */
+#welcomeMessage h4,
+#welcomeMessage p {
+  color: white; /* 글자 색상을 흰색으로 설정 */
+}
+
+.todo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px; /* 원하는 폰트 사이즈로 조절 */
+}
+
+#app {
+  text-align: center;
+}
+
+#taskInput {
+  font-size: 16px; /* 원하는 폰트 사이즈로 조절 */
+  opacity: 0.2; /* 반투명하게 설정 */
+}
+#location {
+  position: absolute;
+  top: 80px;
+  left: 10px;
+  color: white; /* 흰색으로 설정 */
+}
+#weather {
+  position: absolute;
+  top: 120px;
+  left: 10px;
+  color: white; /* 흰색으로 설정 */
+}
+
+/* 추가 스타일 (예시) */
+#location {
+  font-size: 30px; /* 폰트 크기 조절 */
+}
+
+#weather {
+  font-size: 20px; /* 폰트 크기 조절 */
+}
